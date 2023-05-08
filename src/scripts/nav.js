@@ -15,7 +15,16 @@ document.querySelectorAll('.btn-toggle').forEach((btn) => {
     isOpen = !isOpen;
 
     const modal = document.querySelector('.modal');
-    isOpen ? (modal.style.width = '65%') : (modal.style.width = '0');
+    // isOpen ? (modal.style.width = '65%') : (modal.style.width = '0');
+    if (isOpen) {
+      modal.style.width = '65%';
+      setTimeout(() => {
+        modal.style.left = '0';
+      }, 50);
+    } else {
+      modal.style.width = '0';
+      modal.style.left = '100%';
+    }
 
     // Toggle Nav Modal
     navModal.classList.toggle('toggle');
