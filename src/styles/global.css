@@ -1,6 +1,6 @@
 @font-face {
   font-family: Inter;
-  src: url(../../public/assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+  src: url(../../public/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 * {
@@ -24,9 +24,10 @@
   --font-size-p: 15px;
 }
 
-
 body {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   background-color: var(--clr-neutral-white);
+  font-family: Inter, sans-serif;
 }
