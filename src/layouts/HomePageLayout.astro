@@ -1,13 +1,16 @@
 ---
 import News from '../components/News.astro';
 import SideNews from '../components/SideNews.astro';
+import SubNews from '../components/SubNews.astro';
 ---
 
 <main>
   <div class='container grid'>
     <News />
     <SideNews />
-    <section class='sub-news'></section>
+    <div class='sub-news'>
+      <SubNews />
+    </div>
   </div>
 </main>
 
@@ -15,7 +18,11 @@ import SideNews from '../components/SideNews.astro';
   @media (min-width: 375px) {
     .grid {
       display: grid;
-      grid: 2fr 1fr / 2fr 1fr;
+      grid: 1fr 1fr / 2fr 1fr;
+    }
+
+    .sub-news {
+      grid-column: 1 / span 2;
     }
   }
 </style>
