@@ -1,0 +1,20 @@
+---
+import News from '../components/News.astro';
+---
+
+<main>
+  <div class='container grid'>
+    <News />
+    <section class='news'></section>
+    <section class='sub-news'></section>
+  </div>
+</main>
+
+<style>
+  @media (min-width: 375px) {
+    .grid {
+      display: grid;
+      grid: 2fr 1fr / 2fr 1fr;
+    }
+  }
+</style>

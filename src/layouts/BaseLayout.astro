@@ -2,6 +2,7 @@
 import Favicon from '../../public/assets/images/favicon-32x32.png';
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
+import HomePageLayout from '../layouts/HomePageLayout.astro';
 const { pageTitle } = Astro.props;
 ---
 
@@ -15,6 +16,7 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Navbar />
+    <HomePageLayout />
     <slot />
   </body>
 </html>

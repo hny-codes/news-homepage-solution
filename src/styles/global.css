@@ -21,7 +21,7 @@
   --clr-neutral-very-dark-blue: hsl(240, 100%, 5%);
 
   /* Body */
-  --font-size-p: 15px;
+  --font-size-p: 0.938rem;
 }
 
 body {

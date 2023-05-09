@@ -1,0 +1,92 @@
+---
+import HeroImage from '../../assets/images/image-web-3-desktop.jpg';
+import HeroImageMobile from '../../assets/images/image-web-3-mobile.jpg';
+import '../styles/global.css';
+---
+
+<section class='hero-container'>
+  <img class='hero-image' src={HeroImageMobile} alt='hero image' />
+  <div class='hero-text-container'>
+    <h1 class='hero-text'>The Bright Future of Web 3.0?</h1>
+    <div class='hero-text-prompt'>
+      <p>
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+      </p>
+      <button class='hero-btn'>Read More</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-container {
+    padding: 1rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-text {
+    color: var(--clr-neutral-very-dark-blue);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+
+  .hero-text-prompt {
+    color: var(--clr-neutral-dark-gray-blue);
+    line-height: 1.8rem;
+  }
+
+  .hero-btn {
+    max-width: fit-content;
+    margin-top: 1.5rem;
+    padding: 1em 2em;
+    background-color: var(--clr-primary-red);
+    color: var(--clr-neutral-white);
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .hero-btn:hover {
+    background-color: var(--clr-neutral-very-dark-blue);
+    cursor: pointer;
+  }
+
+  @media (min-width: 375px) {
+    .hero-image {
+      content: url('../../assets/images/image-web-3-desktop.jpg');
+      /* content: var(--HeroImage); */
+    }
+
+    .hero-container {
+      display: grid;
+      grid: 0.2fr 1fr / 1fr;
+    }
+
+    .hero-text-container {
+      display: grid;
+      grid: 1fr / 1fr 1fr;
+      margin-top: 1.5rem;
+    }
+
+    .hero-text {
+      font-size: 3rem;
+      margin-right: 2rem;
+    }
+
+    .hero-text-prompt {
+      display: flex;
+      flex-direction: column;
+      font-size: var(--font-size-p);
+    }
+
+    .hero-btn {
+      margin-top: 3rem;
+    }
+  }
+</style>
