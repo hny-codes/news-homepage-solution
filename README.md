@@ -34,4 +34,4 @@ Users should be able to:
 
 ### Useful resources
 
-- [Astro Documnetation](https://docs.astro.build/en/getting-started/) - Great documentation to reinforce concepts of the Astro framework
+- [Astro Documentation](https://docs.astro.build/en/getting-started/) - Great documentation to reinforce concepts of the Astro framework
