@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+---
+
+<section class='sidenews-container'>
+  <h2 class='news-header'>New</h2>
+  <ul class='news-list'>
+    <li class='news-item'>
+      <a href="/"><h3>Hydrogen VS Electric Cars</h3></a>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </li>
+    <hr class="divider">
+    <li class='news-item'>
+      <a href="/"><h3>The Downsides of AI Artistry</h3></a>
+      <p>
+        What are the possible adverse effects of on-demand AI image generation?
+      </p>
+    </li>
+    <hr class="divider">
+    <li class='news-item'>
+      <a href="/"><h3>Is VC Funding Drying Up?</h3></a>
+      <p>
+        Private funding by VC firms is down 50% YOY. We take a look at what that
+        means.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<style>
+
+  a {
+    text-decoration: none;
+    color: var(--clr-neutral-white);
+  }
+
+  a:hover {
+    color: var(--clr-primary-orange);
+  }
+
+  p {
+    color: var(--clr-neutral-gray-blue);
+    line-height: 1.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .sidenews-container {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--clr-neutral-very-dark-blue);
+    height: fit-content;
+  }
+
+  .news-header {
+    color: var(--clr-primary-orange);
+    margin-bottom: 2rem;
+  }
+
+  .news-item {
+    list-style: none;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+
+
+</style>
